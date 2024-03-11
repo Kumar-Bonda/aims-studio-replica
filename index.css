@@ -1,0 +1,392 @@
+/* general */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial;
+    padding: 0px 145px;
+}
+
+p {
+    margin: 0px;
+}
+
+
+/* header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 62px;
+}
+
+.logo-text {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.header-options {
+    display: flex;
+    width: 519px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-options a {
+    color: black;
+    text-decoration: none;
+}
+
+.contact-button {
+    background-color: rgb(47, 106, 217);
+    color: white;
+    padding: 18px 20px;
+    border-radius: 4px;
+    font-family: Arial;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* sidebar menu */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidebar .header {
+    display: flex;
+    margin: 15px 15px 30px 15px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin: 20px;
+    transition: 0.3s;
+}
+
+.sidebar .contact-button {
+    margin: 0px 20px;
+    transition: 0.3s;
+}
+  
+.sidebar .close {
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidebar .close:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.sidemenu-icon-container {
+    border: 2px solid rgb(47, 106, 217);
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.sidemenu-icon {
+    display: none;
+    width: 29px;
+}
+
+.sidemenu-icon img {
+    width: 30px;
+}
+
+
+/* description */
+.items-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.items-container .image {
+    max-width: 580px;
+    width: 100%;
+}
+
+.text .heading {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 90px;
+    color: rgb(27, 22, 66);
+}
+
+.text span {
+    color: rgb(47, 106, 217);
+}
+
+.text .context {
+    font-size: 20px;
+    color: rgb(103, 119, 136);
+    line-height: 33px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+/* about aims */
+.about-AIMS {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-AIMS .heading {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about-AIMS .context {
+    font-size: 20px;
+    color: rgb(103, 119, 136);
+    text-align: center;
+    max-width: 1000px;
+    width: 100%;
+    margin: 50px 0px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px;
+}
+
+.feature .icon-container {
+    background-color: rgb(55, 125, 255, 0.1);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+}
+
+.icon-container .icon {
+    width: 34px;
+    filter: brightness(0) saturate(100%) invert(45%) sepia(55%) saturate(4996%) hue-rotate(208deg) brightness(102%) contrast(101%);
+}
+
+.feature .sub-heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 40px 0px;
+}
+
+.feature .description {
+    text-align: center;
+    color: rgb(103, 119, 136);
+    line-height: 24px;
+    width: 335px;
+}
+
+
+/* aims services */
+.aims-services {
+    margin-top: 60px;
+    width: 100%;
+}
+
+.aims-services .heading {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.aims-services .services {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.service {
+    padding: 20px;
+    margin: 0px 25px 25px 0px;
+    box-shadow: 0 1px 2px rgb(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.service .icon-container {
+    background-color: rgb(55, 125, 255);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+.service .icon {
+    width: 30px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2089%) hue-rotate(159deg) brightness(119%) contrast(100%);
+}
+
+.service .sub-heading {
+    font-size: 18px;
+    margin: 30px 0px;
+}
+
+.service .description {
+    color: rgb(103, 119, 136);
+    line-height: 24px;
+    width: 100%;
+}
+
+
+/* aims impact */
+.aims-impact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.aims-impact .heading {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.aims-impact .description {
+    font-size: 20px;
+    color: rgb(103, 119, 136);
+    line-height: 30px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.aims-impact .image {
+    border-radius: 15px;
+    max-width: 580px;
+    width: 100%;
+}
+
+
+/* case studies */
+.case-studies {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 70px;
+    width: 100%;
+}
+
+.case-study {
+    margin: 0px 20px;
+}
+
+.case-study .sub-heading {
+    font-size: 32px;
+    color: rgb(55, 125, 255);
+}
+
+.case-study .description {
+    font-size: 20px;
+    color: rgb(103, 119, 136);
+    line-height: 32px;
+    margin-top: 30px;
+}
+
+
+/* contact link */
+.contact-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid rgba(103, 119, 136, 0.44);
+    padding-bottom: 40px;
+}
+
+.contact-link .heading {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.contact-link .context {
+    font-size: 20px;
+    color: rgb(103, 119, 136);
+    margin: 35px 0px;
+    text-align: center;
+}
+
+
+/* footer */
+.footer-options {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.footer-options a {
+    color: black;
+    text-decoration: none;
+    margin: 0px 15px;
+}
+
+
+/* credits and author */
+.credits {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.credits span {
+    color: black;
+    font-size: 12px;
+    margin: 3px 0px;
+}
+
+.credits .aims-link {
+    color: rgb(47, 106, 217);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.credits .aims-link:hover {
+    color: rgb(55, 125, 255);
+}
+
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.author img {
+    width: 17px;
+    margin-right: 5px;
+}
